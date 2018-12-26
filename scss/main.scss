@@ -1,0 +1,31 @@
+
+@import './variables';
+
+:root {
+	font-size: 62.5%;
+	body {
+		font-size: 1.6rem; // makes 1rem = 10px
+		min-height: 100vh;
+		background-color: $light;
+		padding-bottom: 10rem;
+	}
+}
+
+// Bootstrap required
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+
+// Bootstrap
+@import 'node_modules/bootstrap/scss/reboot';
+@import 'node_modules/bootstrap/scss/grid';
+
+//Custom
+@import './navbar';
+@import './searchbox';
+@import './product-list';
+@import './category-list';
+@import './product';
+@import './product-detail';
+@import './error';
+@import './loader';

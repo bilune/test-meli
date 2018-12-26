@@ -1,0 +1,16 @@
+.navbar {
+	background-color: $primary;
+	height: 5.6rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+
+	&__container {
+		display: flex;
+	}
+
+	&__logo {
+		margin-right: 2.6rem;
+	}
+}

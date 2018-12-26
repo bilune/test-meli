@@ -1,0 +1,15 @@
+{
+	"short_name": "MercadoLibre",
+	"name": "MercadoLibre",
+	"icons": [
+		{
+			"src": "/static/favicon.ico",
+			"sizes": "64x64",
+			"type": "image/x-icon"
+		}
+	],
+	"start_url": "/",
+	"display": "standalone",
+	"theme_color": "#FFE600",
+	"background_color": "#FFE600"
+}

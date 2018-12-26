@@ -1,0 +1,40 @@
+.searchbox {
+	display: flex;
+	flex-grow: 1;
+
+	&__input {
+		flex-grow: 1;
+		border: none;
+		border-top-left-radius: .4rem;
+		border-bottom-left-radius: .4rem;
+		padding-left: 1.5rem;
+		font-size: 1.8rem;
+	}
+
+	&__input:focus {
+		outline: none;
+	}
+
+	&__input::placeholder {
+		color: $secondary;
+	}
+
+	&__button {
+		width: 4.2rem;
+		height: 3.8rem;
+		background: $light;
+		border: none;
+		cursor: pointer;
+		border-top-right-radius: .4rem;
+		border-bottom-right-radius: .4rem;
+	}
+
+	&__button:hover {
+		transition: background .2s ease;
+		background: darken($light, 10%);
+	}
+
+	&__button:focus {
+		outline: none;
+	}
+}
