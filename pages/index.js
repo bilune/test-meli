@@ -10,8 +10,6 @@ import withLoading from '../utilities/withLoading';
 const Index = ({ loading }) => (
 	<Layout title="MercadoLibre" focusNavbar>
 		{ loading && <Loader /> }
-
-
 	</Layout>
 );
 
