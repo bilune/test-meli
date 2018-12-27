@@ -1,8 +1,7 @@
-import React from 'react';
-import '../scss/main.scss';
+import React, { Component } from 'react';
 import Link from 'next/link';
 
-export default class CustomError extends React.Component {
+class CustomError extends Component {
 	static getInitialProps({ res, err }) {
 		const statusCode = res ? res.statusCode : err ? err.statusCode : null;
 		return { statusCode }
@@ -30,3 +29,5 @@ export default class CustomError extends React.Component {
 		)
 	}
 }
+
+export default CustomError;
