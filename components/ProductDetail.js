@@ -98,10 +98,10 @@ ProductDetail.propTypes = {
 	description: PropTypes.string.isRequired,
 }
 
-export default withLoading(
-	() => (
-		<div className="product-detail">
-			<Loader/>
-		</div>
-	)
-)(ProductDetail);
+const ProductWithLoader = () => (
+	<div className="product-detail">
+		<Loader/>
+	</div>
+);
+
+export default withLoading(ProductWithLoader)(ProductDetail);
