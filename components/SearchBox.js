@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { withRouter } from 'next/router';
 
+/**
+ * Componente que renderiza un formulario de búsqueda de productos
+ */
 class SearchBox extends Component {
 	constructor(props) {
 		super(props);

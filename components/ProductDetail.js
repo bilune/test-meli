@@ -6,6 +6,9 @@ import Loader from './Loader';
 import withLoading from '../utilities/withLoading';
 import { OpenGraph, ProductJsonLd } from '../utilities/SeoUtilities';
 
+/**
+ * El componente renderiza una vista de detalle de un producto en particular.
+ */
 const ProductDetail = ({ id, title, picture, condition, sold_quantity, price, description }) => (
 	<>
 		<div className="product-detail">

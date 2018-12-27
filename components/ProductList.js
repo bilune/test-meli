@@ -5,6 +5,9 @@ import Product from './Product';
 import Loader from './Loader';
 import withLoading from '../utilities/withLoading';
 
+/**
+ * Rendenriza una lista de Productos
+ */
 const ProductList = ({ items, loading }) => {
 	return (
 		<div className="product-list">

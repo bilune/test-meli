@@ -5,6 +5,10 @@ import Head from 'next/head';
 import { OpenGraph } from '../utilities/SeoUtilities';
 import '../scss/main.scss';
 
+/**
+ * Componente principal que sobrescribe al que nextjs
+ * trae por defecto, para agregar estilos y SEO al head.
+ */
 export default class MyApp extends App {
 	static async getInitialProps({ Component, router, ctx }) {
 		let pageProps = {}
