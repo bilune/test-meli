@@ -28,6 +28,7 @@ const Layout = ({ title, children, focusNavbar }) => (
 );
 
 Layout.propTypes = {
+	// Propiedad que establece si debe iniciarse el componente Navbar con focus
 	focusNavbar: PropTypes.bool,
 }
 
