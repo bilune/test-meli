@@ -10,19 +10,6 @@ import ProductJsonLd from '../utilities/ProductJsonLd';
  */
 const Product = ({ id, picture, title, price, location, free_shipping, condition }) => (
 	<>
-		<ProductJsonLd
-			id={id}
-			name={title}
-			image={picture}
-			offers={{
-				price: price.amount,
-				priceCurrency: price.currency,
-				itemCondition: condition === 'new' ?
-					'https://schema.org/NewCondition' :
-					'https://schema.org/UsedCondition',
-			}}
-		/>
-
 		<Link
 			href={{ pathname: '/item', query: { id } }}
 			as={`/items/${id}`}
@@ -59,6 +46,19 @@ const Product = ({ id, picture, title, price, location, free_shipping, condition
 				</div>
 			</a>
 		</Link>
+
+		<ProductJsonLd
+			id={id}
+			name={title}
+			image={picture}
+			offers={{
+				price: price.amount,
+				priceCurrency: price.currency,
+				itemCondition: condition === 'new' ?
+					'https://schema.org/NewCondition' :
+					'https://schema.org/UsedCondition',
+			}}
+		/>
 	</>
 );
 
