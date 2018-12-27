@@ -6,7 +6,8 @@ import Head from 'next/head';
 import OpenGraph from '../utilities/OpenGraph';
 
 /**
- * Este componente 
+ * Este componente renderiza un layout alrededor de los componentes
+ * de la página, que incluye el Navbar y setea el title del documento
  */
 const Layout = ({ title, children, focusNavbar }) => (
 	<>
