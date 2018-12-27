@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Head from 'next/head';
 
 import Navbar from '../components/Navbar';
-import OpenGraph from '../utilities/OpenGraph';
+import { OpenGraph } from '../utilities/SeoUtilities';
 
 /**
  * Este componente renderiza un layout alrededor de los componentes

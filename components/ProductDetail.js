@@ -1,11 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import ProductJsonLd from '../utilities/ProductJsonLd';
-import OpenGraph from '../utilities/OpenGraph';
 
 import { formatNumber } from '../utilities/format';
 import Loader from './Loader';
 import withLoading from '../utilities/withLoading';
+import { OpenGraph, ProductJsonLd } from '../utilities/SeoUtilities';
 
 const ProductDetail = ({ id, title, picture, condition, sold_quantity, price, description }) => (
 	<>

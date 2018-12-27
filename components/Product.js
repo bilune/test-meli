@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Link from 'next/link';
 
 import { formatNumber } from '../utilities/format';
-import ProductJsonLd from '../utilities/ProductJsonLd';
+import { ProductJsonLd } from '../utilities/SeoUtilities';
 
 /**
  * Componente que renderiza una ficha de producto dentro de un ProductList

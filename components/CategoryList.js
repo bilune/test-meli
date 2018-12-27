@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import Head from 'next/head';
 
-import BreadcrumbJsonLd from '../utilities/BreadcrumbJsonLd';
+import { BreadcrumbJsonLd } from '../utilities/SeoUtilities';
 
 /**
  * Componente que renderiza una lista de categorías

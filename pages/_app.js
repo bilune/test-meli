@@ -2,7 +2,7 @@ import React from 'react';
 import App, { Container } from 'next/app';
 import Head from 'next/head';
 
-import OpenGraph from '../utilities/OpenGraph';
+import { OpenGraph } from '../utilities/SeoUtilities';
 import '../scss/main.scss';
 
 export default class MyApp extends App {
