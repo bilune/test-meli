@@ -1,6 +1,10 @@
 .searchbox {
 	display: flex;
 	flex-grow: 1;
+	@include media-breakpoint-down(sm) {
+		max-width: calc(100% - 63px);
+	}
+
 
 	&__input {
 		flex-grow: 1;
@@ -9,6 +13,9 @@
 		border-bottom-left-radius: .4rem;
 		padding-left: 1.5rem;
 		font-size: 1.8rem;
+		@include media-breakpoint-down(sm) {
+			max-width: calc(100% - 4.2rem);
+		}
 	}
 
 	&__input:focus {

@@ -8,7 +8,7 @@ const Navbar = (props) => (
 	<nav className="navbar">
 		<div className="container">
 			<div className="row">
-				<div className="navbar__container col-10 offset-1">
+				<div className="navbar__container col col-md-10 offset-md-1">
 					<Link href="/">
 						<a className="navbar__logo" >
 							<img
