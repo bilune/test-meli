@@ -10,8 +10,8 @@ import withLoading from '../utilities/withLoading';
  */
 const ProductList = ({ items, loading }) => {
 	return (
-		<div className="product-list">
-			<div className="product-list__container">
+		<section>
+			<ol className="product-list">
 				{
 					loading ?
 					<Loader/> :
@@ -21,8 +21,8 @@ const ProductList = ({ items, loading }) => {
 						<Product key={product.id} {...product} />
 					)
 				}
-			</div>
-		</div>
+			</ol>
+		</section>
 	);
 }
 

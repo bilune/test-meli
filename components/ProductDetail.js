@@ -11,14 +11,14 @@ import { OpenGraph, ProductJsonLd } from '../utilities/SeoUtilities';
  */
 const ProductDetail = ({ id, title, picture, condition, sold_quantity, price, description }) => (
 	<>
-		<div className="product-detail">
+		<section className="product-detail">
 			<div className="product-detail__main">
 
 				{/* Imagen */}
 				<div className="product-detail__image">
 					<img src={picture} alt={title} />
 				</div>
-				<div className="product-detail__panel">
+				<section className="product-detail__panel">
 					<div className="product-detail__subtitle">
 						{
 							// Condición / cantidad vendidos
@@ -28,9 +28,9 @@ const ProductDetail = ({ id, title, picture, condition, sold_quantity, price, de
 					</div>
 
 					{/* Título */}
-					<div className="product-detail__title">
+					<h1 className="product-detail__title">
 						{title}
-					</div>
+					</h1>
 
 					{/* Precio */}
 					<div className="product-detail__price">
@@ -39,25 +39,25 @@ const ProductDetail = ({ id, title, picture, condition, sold_quantity, price, de
 					</div>
 
 					{/* Botón Comprar */}
-					<button className="product-detail__buy-button">
+					<button role="button" className="product-detail__buy-button">
 						Comprar
 					</button>
-				</div>
+				</section>
 			</div>
 
 			{
 				// Descripción
 				description &&
-				<div className="product-description">
-					<div className="ProductDescription__title">
+				<article className="product-description">
+					<h2 className="product-description__title">
 						Descripción del producto
-					</div>
-					<div className="product-description__body">
+					</h2>
+					<p className="product-description__body">
 						{description}
-					</div>
-				</div>
+					</p>
+				</article>
 			}
-		</div>
+		</section>
 
 
 		{/* SEO */}

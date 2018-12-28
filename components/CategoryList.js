@@ -22,7 +22,7 @@ const CategoryList = ({ categories }) => (
 
 		<BreadcrumbJsonLd items={categories} />
 
-		<div className="category-list" >
+		<section className="category-list" >
 			{
 				categories.map((category, i) =>
 					<span
@@ -33,7 +33,7 @@ const CategoryList = ({ categories }) => (
 					</span>
 				)
 			}
-		</div>
+		</section>
 	</Fragment>
 );
 

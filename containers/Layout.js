@@ -19,9 +19,9 @@ const Layout = ({ title, children, focusNavbar }) => (
 		<Navbar autoFocus={focusNavbar} />
 		<div className="container">
 			<div className="row">
-				<div className="col col-md-10 offset-md-1">
+				<main className="col col-md-10 offset-md-1">
 					{children}
-				</div>
+				</main>
 			</div>
 		</div>
 	</>

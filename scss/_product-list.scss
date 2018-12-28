@@ -1,8 +1,6 @@
 .product-list {
-	&__container {
-		background-color: $white;
-		border-radius: 4px;
-		position: relative;
-		
-	}
+	background-color: $white;
+	border-radius: 4px;
+	position: relative;
+	padding-left: 0;
 }
