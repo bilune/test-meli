@@ -10,26 +10,36 @@ class SearchBox extends Component {
 		super(props);
 		const { query } = this.props.router;
 		this.state = {
-			search: query.search,
+			search: query.search || '',
 		}
 	}
 
 	static propTypes = {
+		// propiedad pasada por el HOC withRouter
 		router: PropTypes.object,
+		// Propiedad que define si enfocar el campo de búsqueda al inicio
 		autoFocus: PropTypes.bool,
 	}
 
 	componentDidMount() {
+		this.autoFocus();
+	}
+	
+	/**
+	 * Función que hace focus en input si está seteada la propiedad correspondiente
+	 */
+	autoFocus = () => {
 		const { autoFocus } = this.props;
 		if (autoFocus && this.input) {
 			this.input.focus();
 		}
 	}
 
-	handleChange = e => {
-		this.setState({ search: e.target.value });
-	}
-
+	/**
+	 * Función que se ejecuta al enviar el formulario.
+	 * Redirige a la ruta para la búsqueda si tiene valor
+	 * o hace focus en el input nuevamente si es vacío.
+	 */
 	search = () => {
 		const { router } = this.props;
 		const { search } = this.state;
@@ -41,6 +51,13 @@ class SearchBox extends Component {
 		} else if (this.input) {
 			this.input.focus();
 		}
+	}
+
+	/**
+	 * Función que setea el valor del campo search en el componente
+	 */
+	handleChange = e => {
+		this.setState({ search: e.target.value });
 	}
 
 	render() {
