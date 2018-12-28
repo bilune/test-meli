@@ -21,9 +21,7 @@ class SearchBox extends Component {
 
 	componentDidMount() {
 		const { autoFocus } = this.props;
-		console.log(autoFocus)
 		if (autoFocus && this.input) {
-			console.log('hola')
 			this.input.focus();
 		}
 	}
