@@ -95,7 +95,7 @@ ProductDetail.propTypes = {
 	condition: PropTypes.string.isRequired,
 	free_shipping: PropTypes.bool.isRequired,
 	sold_quantity: PropTypes.number.isRequired,
-	description: PropTypes.string.isRequired,
+	description: PropTypes.string,
 }
 
 const ProductWithLoader = () => (
