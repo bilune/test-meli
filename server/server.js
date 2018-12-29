@@ -15,7 +15,7 @@ app.prepare()
 	.then(() => {
 		const server = express();
 
-		app.use(compression());
+		server.use(compression());
 
 		// API Rest
 		server.use('/api/items', require('./api'));
