@@ -75,6 +75,7 @@ const ProductDetail = ({ id, title, picture, condition, sold_quantity, price, de
 		/>
 
 		<OpenGraph
+			type="product"
 			title={title}
 			description={description}
 			image={picture}

@@ -2,8 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Head from 'next/head';
 
-const OpenGraph = ({ url, title, description, image, twitter }) => (
+const OpenGraph = ({ url, title, description, image, twitter, type }) => (
 	<Head>
+		<meta property="og:type" key="og:type" content={type || 'website'} />
 		{ url && <meta property="og:url" key="og:url" content={url} /> }
 		{ title && <meta property="og:title" key="og:title" content={title} /> }
 		{ description && <meta property="og:description" key="og:description" content={description} /> }
