@@ -17,10 +17,11 @@ const SearchPage = ({ data }) => (
 	</Layout>
 );
 
-SearchPage.getInitialProps = async context => {
+SearchPage.getInitialProps = async ({ query, req }) => {
+	const origin = req ? `${req.protocol}://${req.get('Host')}` : window.location.origin;
 	try {
-		const { id } = context.query;
-		const res = await axios.get(`http://localhost:3000/api/items/${id}`);
+		const { id } = query;
+		const res = await axios.get(`${origin}/api/items/${id}`);
 		const { data } = res;
 		return { data };
 

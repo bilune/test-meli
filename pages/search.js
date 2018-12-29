@@ -15,11 +15,18 @@ const SearchPage = ({ data, search }) => (
 	</Layout>
 );
 
-SearchPage.getInitialProps = async context => {
-	const { search } = context.query;
-	const res = await axios.get(`http://localhost:3000/api/items?q=${search}`);
-	const { data } = res;
-	return { data, search };
+SearchPage.getInitialProps = async ({ req, query }) => {
+	const origin = req ? `${req.protocol}://${req.get('Host')}` : window.location.origin;
+	try {
+		const { search } = query;
+		const res = await axios.get(`${origin}/api/items?q=${search}`);
+		const { data } = res;
+		return { data, search };
+	} catch (error) {
+		const err = new Error();
+		err.code = 'ENOENT';
+		throw err;
+	}
 }
 
 export default SearchPage;
