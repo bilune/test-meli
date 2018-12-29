@@ -1,5 +1,6 @@
 const express = require('express');
 const next = require('next');
+const compression = require('compression');
 
 // Se configura servidor con nextjs
 const dev = process.env.NODE_ENV !== 'production';
@@ -13,6 +14,8 @@ const handle = app.getRequestHandler();
 app.prepare()
 	.then(() => {
 		const server = express();
+
+		app.use(compression());
 
 		// API Rest
 		server.use('/api/items', require('./api'));
