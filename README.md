@@ -4,9 +4,27 @@ La aplicación consta de tres componentes principales: la caja de búsqueda, la 
 [Ver demo](https://meli-test-bilune.herokuapp.com/)
 
 ## Ejecutar el proyecto
-### Desarrollador
 
-- Ejecutar los siguientes comandos:
+1. Clonar el respositorio
+```sh
+git clone https://github.com/bilune/test-meli.git
+```
+
+2. Instalar las dependencias
+
+**Yarn**
+```sh
+yarn install
+```
+
+**npm**
+```sh
+npm install
+```
+
+3. Ejecutar los siguientes comandos según si se quiere ejecutar en modo desarrollador o en producción:
+
+### Desarrollador
 
 **Yarn**
 ```sh
@@ -17,11 +35,8 @@ yarn run dev
 ```sh
 npm run dev
 ```
-- Acceder a [http://localhost:3000/](http://localhost:3000/)
 
 ### Producción
-
-- Ejecutar los siguientes comandos:
 
 **Yarn**
 ```sh
@@ -35,7 +50,7 @@ npm run build
 npm start
 ```
 
-- Acceder a [http://localhost:3000/](http://localhost:3000/)
+4. Acceder a [http://localhost:3000/](http://localhost:3000/)
 
 ## Stack tecnológico
 - Cliente:
