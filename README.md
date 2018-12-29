@@ -1,6 +1,8 @@
 # Test práctico - Frontend
 La aplicación consta de tres componentes principales: la caja de búsqueda, la visualización de resultados y la descripción del detalle del producto. Dos de estas vistas consumen una API Rest que se alimenta de la API de MercadoLibre.
 
+[Ver demo](https://meli-test-bilune.herokuapp.com/)
+
 ## Ejecutar el proyecto
 ### Desarrollador
 
@@ -63,7 +65,7 @@ Además, me pareció importante tener en cuenta algunos aspectos que beneficiar�
 <img src='https://raw.githubusercontent.com/bilune/test-meli/master/static/readme/error_page.png' width='600' alt='error page'>
 </p>
 
-- Colaborar con el usuario para evitar la navegación sin errores, por ejemplo en el caso de la página inicial de búsqueda, si envía el formulario cuando el campo de texto está vacío, la aplicación no lo redirecciona a la visualización de resultados sino que vuelve a hacer foco en dicho *input*, dando a entender de un modo no invasivo que debe asegurarse de completarlo.
+- Colaborar con el usuario para evitar errores en la navegación, por ejemplo en el caso de la página inicial de búsqueda, si envía el formulario cuando el campo de texto está vacío, la aplicación no lo redirecciona a la visualización de resultados sino que vuelve a hacer foco en dicho *input*, dando a entender de un modo no invasivo que debe asegurarse de completarlo.
 - Al ser una Single Page App, me parece muy importante para la usabilidad la presencia de loaders que indiquen al usuario que la petición que realizó se está procesando en ese momento. En el caso de la presente aplicación, este loader fue colocado entre las páginas (pages) y no en los componentes hijos, aunque el estado loading de la aplicación era accesible desde todo punto con el Higher-Order Component [withLoading](https://github.com/bilune/test-meli/blob/master/utilities/withLoading.js).
 
 ### SEO
