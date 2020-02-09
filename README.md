@@ -7,7 +7,7 @@ La aplicación consta de tres componentes principales: la caja de búsqueda, la 
 
 1. Clonar el respositorio
 ```sh
-git clone https://github.com/bilune/test-meli.git
+git clone https://github.com/bilune/test-mercadolibre.git
 ```
 
 2. Instalar las dependencias
@@ -77,11 +77,11 @@ Además, me pareció importante tener en cuenta algunos aspectos que beneficiar�
 - Implementar páginas de error que inviten al usuario a volver a la aplicación.
 
 <p align='center'>
-<img src='https://raw.githubusercontent.com/bilune/test-meli/master/static/readme/error_page.png' width='600' alt='error page'>
+<img src='https://raw.githubusercontent.com/bilune/test-mercadolibre/master/static/readme/error_page.png' width='600' alt='error page'>
 </p>
 
 - Colaborar con el usuario para evitar errores en la navegación, por ejemplo en el caso de la página inicial de búsqueda, si envía el formulario cuando el campo de texto está vacío, la aplicación no lo redirecciona a la visualización de resultados sino que vuelve a hacer foco en dicho *input*, dando a entender de un modo no invasivo que debe asegurarse de completarlo.
-- Al ser una Single Page App, me parece muy importante para la usabilidad la presencia de loaders que indiquen al usuario que la petición que realizó se está procesando en ese momento. En el caso de la presente aplicación, este loader fue colocado entre las páginas (pages) y no en los componentes hijos, aunque el estado loading de la aplicación era accesible desde todo punto con el Higher-Order Component [withLoading](https://github.com/bilune/test-meli/blob/master/utilities/withLoading.js).
+- Al ser una Single Page App, me parece muy importante para la usabilidad la presencia de loaders que indiquen al usuario que la petición que realizó se está procesando en ese momento. En el caso de la presente aplicación, este loader fue colocado entre las páginas (pages) y no en los componentes hijos, aunque el estado loading de la aplicación era accesible desde todo punto con el Higher-Order Component [withLoading](https://github.com/bilune/test-mercadolibre/blob/master/utilities/withLoading.js).
 
 ### SEO
 Optimizar la presencia en buscadores fue una de las razones determinantes por las que utilicé el framework Next.js, dado que quería asegurarme que los tags responsables del SEO sean reconocibles por los diferentes crawlers presentes en la web. Por ejemplo, los rastreadores de Facebook y Twitter no reconocían los tags de Open Graph agregados dinámicamente en el lado del cliente.
@@ -96,7 +96,7 @@ También tuve en cuenta la presencia en el head de un título y una descripción
 Otra de las principales razones por las que decidí usar una herramienta como Next.js fue el deseo de crear un sitio performante en todo tipo de dispositivos. Esa tecnología facilitó la tarea de crear una aplicación isomórfica que permite que terminales con pocos recursos puedan acceder al contenido más rápido y además que usuarios puedan ver contenido significativo y comenzar a interactuar con el sitio en menos tiempo.
 
 <p align='center'>
-<img src='https://raw.githubusercontent.com/bilune/test-meli/master/static/readme/performance_test.jpg' width='100%' alt='performance test'>
+<img src='https://raw.githubusercontent.com/bilune/test-mercadolibre/master/static/readme/performance_test.jpg' width='100%' alt='performance test'>
 <small>Auditoría de Google Lighthouse</small>
 </p>
 
