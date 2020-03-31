@@ -6,7 +6,7 @@
 		"bootstrap": "^4.2.1",
 		"compression": "^1.7.3",
 		"express": "^4.16.4",
-		"next": "^7.0.2",
+		"next": "^9.3.2",
 		"next-router-events": "^2.1.0",
 		"node-sass": "^4.11.0",
 		"prop-types": "^15.6.2",
